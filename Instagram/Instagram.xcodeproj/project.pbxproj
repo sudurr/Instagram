@@ -12,6 +12,7 @@
 		47E307212976C8AB000C6DA7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 47E307202976C8AB000C6DA7 /* Assets.xcassets */; };
 		47E307242976C8AB000C6DA7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 47E307222976C8AB000C6DA7 /* LaunchScreen.storyboard */; };
 		47E307302976CABC000C6DA7 /* FeedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47E3072F2976CABC000C6DA7 /* FeedViewController.swift */; };
+		47E307332976D254000C6DA7 /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = 47E307322976D254000C6DA7 /* SnapKit */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,6 +30,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				47E307332976D254000C6DA7 /* SnapKit in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -56,6 +58,7 @@
 			children = (
 				47E3072C2976C91A000C6DA7 /* Application */,
 				47E3072E2976CA7A000C6DA7 /* Feed */,
+				47E307342976F0AC000C6DA7 /* Views */,
 				47E3072D2976C949000C6DA7 /* Resources */,
 			);
 			path = Instagram;
@@ -88,6 +91,13 @@
 			path = Feed;
 			sourceTree = "<group>";
 		};
+		47E307342976F0AC000C6DA7 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -104,6 +114,9 @@
 			dependencies = (
 			);
 			name = Instagram;
+			packageProductDependencies = (
+				47E307322976D254000C6DA7 /* SnapKit */,
+			);
 			productName = Instagram;
 			productReference = 47E307142976C8A8000C6DA7 /* Instagram.app */;
 			productType = "com.apple.product-type.application";
@@ -132,6 +145,9 @@
 				Base,
 			);
 			mainGroup = 47E3070B2976C8A8000C6DA7;
+			packageReferences = (
+				47E307312976D254000C6DA7 /* XCRemoteSwiftPackageReference "SnapKit" */,
+			);
 			productRefGroup = 47E307152976C8A8000C6DA7 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -370,6 +386,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		47E307312976D254000C6DA7 /* XCRemoteSwiftPackageReference "SnapKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SnapKit/SnapKit.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		47E307322976D254000C6DA7 /* SnapKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 47E307312976D254000C6DA7 /* XCRemoteSwiftPackageReference "SnapKit" */;
+			productName = SnapKit;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 47E3070C2976C8A8000C6DA7 /* Project object */;
 }
