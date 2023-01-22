@@ -20,12 +20,14 @@ initialize()    }
 private extension FeedViewController {
     func initialize() {
         view.backgroundColor = .white
+        navigationController?.navigationBar.tintColor = .black
         navigationItem.leftBarButtonItems = makeLeftBarButtonItems()
     }
     
     func makeLeftBarButtonItems() -> [UIBarButtonItem] {
+        let logoBarButtonItem = UIBarButtonItem(customView: LogoView())
         let dropDownButtonItem = UIBarButtonItem(title: nil, image: UIImage(systemName: "chevron.down"), target: self, action: nil, menu: makeDropDownMenu())
-        return [dropDownButtonItem]
+        return [logoBarButtonItem, dropDownButtonItem]
     }
     
     func makeDropDownMenu () -> UIMenu {
