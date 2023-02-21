@@ -16,3 +16,4 @@ struct FeedStoriesItemCellInfo {
 }
 
 typealias FeedStoriesCellInfo = [FeedStoriesItemCellInfo]
+//
