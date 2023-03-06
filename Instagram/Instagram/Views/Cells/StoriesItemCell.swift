@@ -44,7 +44,9 @@ class StoriesItemCell: UICollectionViewCell {
         view.clipsToBounds = true
         return view
     }()
-
+//
+    
+//
     private let usernameLabel: UILabel = {
         let label = UILabel()
         label.font = .systemFont(ofSize: UIConstants.usernameFontSize)
